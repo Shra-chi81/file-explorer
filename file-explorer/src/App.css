@@ -1,0 +1,160 @@
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  padding: 5px;
+  background-color: #99b4eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-main {
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 20px;
+  flex: 1;
+}
+
+.App-footer {
+  background-color: #99b4eb;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color:#ffffff;
+  font-size: larger;
+}
+
+/* Sidebar CSS */
+
+.sidebar {
+  background-color: #f0f0f0;
+  height: 100vh;
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  font-size: 25px !important;
+  font-family: ui-serif !important;
+  text-align: left !important;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* Example of responsive styling */
+.file-explorer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btns{
+  margin-left: 2px;
+}
+
+@media (min-width: 768px) {
+  .file-explorer {
+      flex-direction: row;
+      padding: 25px;
+  }
+  .custom-card{
+    margin: 0 10% 20px 10%;
+  }
+  .btns{
+    margin-left: 10px;
+  }
+}
+.view-content{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* file-operations-container */
+
+.error-message{
+  color: red;
+  font-weight: bold;
+}
+.custom-card {
+  background-color:  #99b4eb;;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-body {
+  padding: 20px;
+}
+
+.custom-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.custom-col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.custom-col-auto {
+  margin-left: 10px;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btns button{
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rename{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btns button:hover {
+  background-color: #0056b3;
+}
+
+.folder-children {
+  justify-content: left;
+  text-align: left;
+}
+
+.folder-item {
+  margin-bottom: 10px;
+}
